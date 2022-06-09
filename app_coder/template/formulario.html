@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% load static %}
+       
+       
+       
+    {% block contenido %}
+        <h1>alta de cursos</h1>
+        <form action="curso_formulario" method="post">
+            {% csrf_token %}
+            <p>Nombre:</p>
+            <input type="text" name="nombre" required>
+            <p>Legajo:</p>
+            <input type="number" name="camada" required>
+        </form>
+    {% endblock %}
